@@ -28,16 +28,7 @@ $app = new \Slim\Slim(array(
 
 $_SERVER['SERVER_PORT'] = 80;
 // ROUTES
-require_once __DIR__ . '/routes/accountRoutes.php';
-require_once __DIR__ . '/routes/buyRoutes.php';
-require_once __DIR__ . '/routes/errorRoutes.php';
-require_once __DIR__ . '/routes/frequentRoutes.php';
-require_once __DIR__ . '/routes/invoiceRoutes.php';
-require_once __DIR__ . '/routes/logRoutes.php';
-require_once __DIR__ . '/routes/netsRoutes.php';
-require_once __DIR__ . '/routes/restrictedRoutes.php';
-require_once __DIR__ . '/routes/signInRoutes.php';
-require_once __DIR__ . '/routes/testRoutes.php';
+
 require_once __DIR__ . '/routes/wordpressRoutes.php';
 
 /*
