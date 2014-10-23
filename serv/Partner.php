@@ -17,6 +17,30 @@
  * wordpress sites and the wp/store functionality.
  * 
  */
+ 
+ /* SQL DDL for Partner
+ CREATE TABLE `partner` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`partnerName` char(70) CHARACTER SET utf32 NOT NULL DEFAULT '',
+`anonCompensation` int(11) NOT NULL DEFAULT '0',
+`emailCompensation` int(11) NOT NULL DEFAULT '25',
+`cardCompensation` int(11) DEFAULT '25',
+`rootDomain` char(50) NOT NULL DEFAULT '',
+`languageID` int(11) NOT NULL,
+`balance` int(11) NOT NULL,
+`domain` varchar(44) NOT NULL DEFAULT '',
+`cutOffDate` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+`logosrc` varchar(40) NOT NULL DEFAULT '',
+`defaultCost` int(11) DEFAULT '1',
+`secret` varchar(50) NOT NULL,
+`wordpressPage` int(1) DEFAULT '0',
+`defaultCurrencyCode` char(3) DEFAULT NULL,
+`wsOwnerId` int(11) DEFAULT NULL,
+PRIMARY KEY (`id`),
+KEY `partnerID` (`id`),
+KEY `domain` (`domain`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+*/
 
 //namespace kardang\Bid\Controller;
 use Symfony\Component\HttpFoundation\Request;
